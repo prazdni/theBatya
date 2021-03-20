@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986e1608-e3cc-4d70-ae34-dd682a050de5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Danil/Scripts/InputLetters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/InputLetters.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Danil/Music/Mixers/MainAudioMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Music/Mixers/MainAudioMixer.mixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Danil/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Scenes/MainScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616227501045</updated>
-      <workItem from="1616227507425" duration="10413000" />
+      <workItem from="1616227507425" duration="11133000" />
     </task>
     <servers />
   </component>
