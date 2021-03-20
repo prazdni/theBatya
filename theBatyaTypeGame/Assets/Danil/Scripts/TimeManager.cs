@@ -6,6 +6,7 @@ namespace Danil.Scripts
     {
         public int ReduceCount => _reduceCount;
         
+        [SerializeField] private EndMessage _endMessage;
         [SerializeField] private InputLetters _inputLetters;
 
         [SerializeField] private SpriteChanger _spriteChanger;
@@ -18,6 +19,8 @@ namespace Danil.Scripts
         private float _changeCounter;
         
         private int _reduceCount = 1;
+
+        private bool _isDead = false;
 
         private void Start()
         {
@@ -44,7 +47,12 @@ namespace Danil.Scripts
             }
             else
             {
-                Debug.Log("Death");
+                if (!_isDead)
+                {
+                    _isDead = true;
+                    _endMessage.ShowScore();
+                    Debug.Log("Death");
+                }
             }
         }
 
