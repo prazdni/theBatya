@@ -20,8 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986e1608-e3cc-4d70-ae34-dd682a050de5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/AllPhrases.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/AllPhrases.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/PhraseOutput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/PhraseOutput.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Danil/Scripts/PasteLetter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/PasteLetter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Danil/Scripts/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/TimeManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +54,10 @@
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/Score.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/LetterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/PasteLetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/PhrazeOutput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/AllPhrases.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/TimeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/PhraseOutput.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616227501045</updated>
       <workItem from="1616227507425" duration="28224000" />
-      <workItem from="1616260206712" duration="1570000" />
+      <workItem from="1616260206712" duration="2428000" />
     </task>
     <servers />
   </component>
