@@ -4,9 +4,9 @@ namespace Danil.Scripts
 {
     public static class AllStatic
     {
-        public static readonly string DRINK = "Я не буду пить";
-        public static readonly string SMOKE = "Я не буду курить";
-        public static readonly string USE = "Я не буду употреблять";
+        public static readonly string DRINK = "я не буду пить";
+        public static readonly string SMOKE = "я не буду курить";
+        public static readonly string USE = "я не буду употреблять";
 
         public static readonly List<char> ALPHABET = new List<char>()
         {

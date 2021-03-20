@@ -23,6 +23,7 @@
               <e p="Sprites.cs" t="Include" />
             </e>
             <e p="SpriteChanger.cs" t="Include" />
+            <e p="TestInitialize.cs" t="Include" />
             <e p="TimeManager.cs" t="Include" />
             <e p="Timer.cs" t="Include" />
           </e>

@@ -52,7 +52,6 @@ namespace Danil.Scripts
             }
             else
             {
-                Debug.Log("Wrong");
                 _audioSource.clip = _audioClipWrong;
                 _audioSource.Play();
             }
