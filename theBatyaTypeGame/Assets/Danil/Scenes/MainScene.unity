@@ -2325,7 +2325,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -10874,8 +10874,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _letterController: {fileID: 0}
-  _audioClipRight: {fileID: 0}
-  _audioClipWrong: {fileID: 0}
+  _audioClipRight: {fileID: 8300000, guid: 2e26a5e612346cf41b13018db08a9566, type: 3}
+  _audioClipWrong: {fileID: 8300000, guid: aee6249f87540694bafca0b9c1a5cd02, type: 3}
   InputField: {fileID: 2066874373}
 --- !u!82 &2066874377
 AudioSource:
@@ -10886,7 +10886,7 @@ AudioSource:
   m_GameObject: {fileID: 2066874371}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 1658513867513606761, guid: 67f233bc86102be4abda36c535cdcbca, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1

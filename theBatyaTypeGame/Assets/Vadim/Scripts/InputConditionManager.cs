@@ -70,7 +70,7 @@ public class InputConditionManager : MonoBehaviour
         }
         else
         {
-            _endMessage.ShowScore();
+            _inputLetters.OnAnswer(false);
         }
     }
 }
