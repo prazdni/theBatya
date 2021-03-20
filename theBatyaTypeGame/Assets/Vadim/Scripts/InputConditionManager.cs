@@ -50,10 +50,7 @@ public class InputConditionManager : MonoBehaviour
         var phrase = _phraseToCheck;
         var charStr = _phraseToCheck.Distinct().ToList();
         charStr.RemoveAll(c => c == ' ');
-        foreach (var c in charStr)
-        {
-            Debug.Log(c);
-        }
+        
         var wordsToAdd = "";
         
         if (_level == 0)
@@ -118,7 +115,9 @@ public class InputConditionManager : MonoBehaviour
         }
         
         _phraseOutput.ChangePhrase(phrase + wordsToAdd);
-        _phraseToCheck.Replace(" ", "");
+        _phraseToCheck = _phraseToCheck.Replace(" ", "");
+        
+        Debug.Log(_phraseToCheck);
     }
 
     private void OnValueChanged(string str)

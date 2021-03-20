@@ -7,7 +7,7 @@ namespace Danil.Scripts
     {
         private void Awake()
         {
-            PlayerPrefs.SetInt("Difficulty", 1);
+            PlayerPrefs.SetInt("Difficulty", 0);
         }
     }
 }
