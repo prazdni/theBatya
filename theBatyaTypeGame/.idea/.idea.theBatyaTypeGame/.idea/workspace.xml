@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986e1608-e3cc-4d70-ae34-dd682a050de5" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/AllPhrases.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/AllPhrases.cs.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/PhraseOutput.cs" afterDir="false" />
@@ -27,6 +28,26 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Danil/Scripts/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/TimeManager.cs" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/Interface.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/Interface/IAction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/Interface/IAction.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/Scriptables.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/Scriptables/AllTypesOfSprites.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/Scriptables/AllTypesOfSprites.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/Scriptables/Sprites.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/Scriptables/Sprites.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/SpriteChanger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/SpriteChanger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/TimeManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/TimeManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/Timer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/Timer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Danil/Scripts/InputLetters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/InputLetters.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Danil/Scripts/PasteLetter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/PasteLetter.cs" afterDir="false" />
+>>>>>>> Vadim
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +64,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/InutLetters.cs" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/TestSctipts.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/Scriptables/Sprites.cs" />
@@ -58,6 +80,18 @@
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/AllPhrases.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/TimeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/PhraseOutput.cs" />
+=======
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/LetterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/TestSctipts.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/Interface/IAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/InputLetters.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/Timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/Scriptables/Sprites.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/Scriptables/AllTypesOfSprites.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/SpriteChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/TimeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/PasteLetter.cs" />
+>>>>>>> Vadim
       </list>
     </option>
   </component>
@@ -101,8 +135,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616227501045</updated>
+<<<<<<< HEAD
       <workItem from="1616227507425" duration="28224000" />
       <workItem from="1616260206712" duration="2428000" />
+=======
+      <workItem from="1616227507425" duration="17696000" />
+>>>>>>> Vadim
     </task>
     <servers />
   </component>
@@ -121,15 +159,25 @@
         </entry>
       </map>
     </option>
+<<<<<<< HEAD
     <option name="oldMeFiltersMigrated" value="true" />
+=======
+>>>>>>> Vadim
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1616254524796">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1616254524796" />
+=======
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1616242964429">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1616242964429" />
+>>>>>>> Vadim
   </component>
 </project>

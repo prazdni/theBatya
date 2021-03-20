@@ -6,18 +6,18 @@ using UnityEngine;
 public class PasteLetter : MonoBehaviour
 {
     public int LetterId;
-    public TMP_InputField _inputField;
+    public TMP_InputField InputField;
+    public AudioClip AudioClip;
+    public TMP_Text Text;
     
     private AudioSource _audioSource;
-    public AudioClip AudioClip;
-    private TMP_Text _text;
-    
-    private void Start()
+
+    public void Initialize()
     {
-        _inputField.onValueChanged.AddListener(OnValueChanged);
-        _inputField.onEndEdit.AddListener(OnEndEdit);
+        InputField.onValueChanged.AddListener(OnValueChanged);
+        InputField.onEndEdit.AddListener(OnEndEdit);
         
-        _text = GetComponent<TMP_Text>();
+        Text = GetComponent<TMP_Text>();
         
         _audioSource = GetComponent<AudioSource>();
     }
@@ -28,8 +28,7 @@ public class PasteLetter : MonoBehaviour
         
         if (str.Length == LetterId + 1)
         {
-            Debug.Log("1");
-            _text.text = str[LetterId].ToString();
+            Text.text = str[LetterId].ToString();
             _audioSource.clip = AudioClip;
             _audioSource.Play();
         }
@@ -37,13 +36,13 @@ public class PasteLetter : MonoBehaviour
         {
             if (str.Length < LetterId + 1)
             {
-                _text.text = "";
+                Text.text = "";
             }
         }
     }
     
     private void OnEndEdit(string str)
     {
-        _inputField.text = "";
+        InputField.text = "";
     }
 }

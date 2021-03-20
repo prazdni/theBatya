@@ -15,22 +15,9 @@ namespace Danil.Scripts
             _text = GetComponent<TMP_Text>();
         }
 
-        public void ChangePhrase(string additionalPhrase)
+        public void ChangePhrase(string phrase)
         {
-            if (_spriteChanger.CurrentSpriteTypeNumber == 0)
-            {
-                _text.text = AllPhrases.DRINK + additionalPhrase;
-            }
-
-            if (_spriteChanger.CurrentSpriteTypeNumber == 1)
-            {
-                _text.text = AllPhrases.SMOKE + additionalPhrase;
-            }
-            
-            if (_spriteChanger.CurrentSpriteTypeNumber == 2)
-            {
-                _text.text = AllPhrases.USE + additionalPhrase;
-            }
+            _text.text = phrase;
         }
     }
 }
