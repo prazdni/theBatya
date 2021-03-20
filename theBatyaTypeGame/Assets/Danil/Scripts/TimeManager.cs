@@ -32,20 +32,6 @@ namespace Danil.Scripts
             {
                 if (_changeCounter >= _timer.TimerMaxValue / _spriteChanger.Sprites.SpriteTypes[_spriteChanger.CurrentSpriteTypeNumber].AllSprites.Count)
                 {
-                    Debug.Log(_changeCounter + " " + _timer.TimerMaxValue / _spriteChanger.Sprites.SpriteTypes[_spriteChanger.CurrentSpriteTypeNumber].AllSprites.Count);
-                    
-                    //if (_spriteChanger.CurrentSpriteListNumber 
-                    //    >= _spriteChanger.Sprites.SpriteTypes[_spriteChanger.CurrentSpriteTypeNumber].AllSprites.Count - 1)
-                    //{
-                    //    Debug.Log("Death");
-                    //}
-                    //else
-                    //{
-                    //    _changeCounter = 0.0f;
-                    //    _spriteChanger.CurrentSpriteListNumber++;
-                    //    _spriteChanger.ChangeSprite();
-                    //}
-                    
                     _changeCounter = 0.0f;
                     _spriteChanger.CurrentSpriteListNumber++;
                     _spriteChanger.ChangeSprite();
