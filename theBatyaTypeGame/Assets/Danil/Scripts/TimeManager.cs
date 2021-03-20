@@ -66,6 +66,7 @@ namespace Danil.Scripts
                     _spriteChanger.CurrentSpriteTypeNumber = 0;
                     _spriteChanger.CurrentSpriteListNumber = 0;
                     _changeCounter = 0.0f;
+                    _spriteChanger.ChangeSprite();
                     _reduceCount++;
                 }
                 else
