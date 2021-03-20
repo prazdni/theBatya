@@ -12,15 +12,18 @@ namespace Danil.Scripts
         [SerializeField] private Score _score;
 
         private TMP_Text _text;
+        private AudioSource _audioSource;
         
         private void Awake()
         {
             _text = GetComponent<TMP_Text>();
+            _audioSource = GetComponent<AudioSource>();
             _text.text = "Ждём пройгрыша";
         }
 
         public void ShowScore()
         {
+            _audioSource.Play();
             _text.text = $"Поздравляем, вы набрали {_score.ScoreCount} очков";
         }
     }
