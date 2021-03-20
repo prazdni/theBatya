@@ -1,12 +1,16 @@
-﻿using TMPro;
+﻿using System;
+using Danil.Scripts.Interface;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Danil.Scripts
 {
     [RequireComponent(typeof(AudioSource))]
-    public class InputLetters : MonoBehaviour
+    public class InputLetters : MonoBehaviour, IAction<bool>
     {
+        public event Action<bool> OnAction = (b => { });
+        
         [SerializeField] private AudioClip _audioClipRight;
         [SerializeField] private AudioClip _audioClipWrong;
         

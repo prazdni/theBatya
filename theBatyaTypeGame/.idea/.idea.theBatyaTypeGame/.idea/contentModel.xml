@@ -9,8 +9,18 @@
         <e p="Danil" t="Include">
           <e p="Scripts" t="Include">
             <e p="InputLetters.cs" t="Include" />
+            <e p="Interface" t="Include">
+              <e p="IAction.cs" t="Include" />
+            </e>
             <e p="LetterController.cs" t="Include" />
             <e p="PasteLetter.cs" t="Include" />
+            <e p="Scriptables" t="Include">
+              <e p="AllTypesOfSprites.cs" t="Include" />
+              <e p="Sprites.cs" t="Include" />
+            </e>
+            <e p="SpriteChanger.cs" t="Include" />
+            <e p="TimeManager.cs" t="Include" />
+            <e p="Timer.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

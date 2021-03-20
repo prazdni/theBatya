@@ -8,7 +8,7 @@ using UnityEngine;
 public class PasteLetter : MonoBehaviour
 {
     public int LetterId;
-    [SerializeField] private TMP_InputField _inputField;
+    public TMP_InputField _inputField;
     
     private AudioSource _audioSource;
     public AudioClip AudioClip;
