@@ -18,9 +18,10 @@ public class PasteLetter : MonoBehaviour
     {
         _inputField.onValueChanged.AddListener(OnValueChanged);
         _inputField.onEndEdit.AddListener(OnEndEdit);
+        
         _text = GetComponent<TMP_Text>();
+        
         _audioSource = GetComponent<AudioSource>();
-        _audioSource.clip = AudioClip;
     }
 
     private void OnValueChanged(string str)
@@ -29,7 +30,9 @@ public class PasteLetter : MonoBehaviour
         
         if (str.Length == LetterId + 1)
         {
+            Debug.Log("1");
             _text.text = str[LetterId].ToString();
+            _audioSource.clip = AudioClip;
             _audioSource.Play();
         }
         else

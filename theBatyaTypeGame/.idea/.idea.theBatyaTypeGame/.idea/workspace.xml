@@ -20,16 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986e1608-e3cc-4d70-ae34-dd682a050de5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/EndMessage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/EndMessage.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/Score.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/Score.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Danil/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Danil/Scripts/InputLetters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/InputLetters.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Danil/Scripts/Interface/IAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/Interface/IAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Danil/Scripts/SpriteChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/SpriteChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Danil/Scripts/PasteLetter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/PasteLetter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Danil/Scripts/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/TimeManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,18 +39,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/InutLetters.cs" />
-        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/LetterController.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/TestSctipts.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/Scriptables/Sprites.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/Scriptables/AllTypesOfSprites.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/Interface/IAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/SpriteChanger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/PasteLetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/InputLetters.cs" />
-        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/TimeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/EndMessage.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/Score.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/LetterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/PasteLetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/TimeManager.cs" />
       </list>
     </option>
   </component>
@@ -103,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616227501045</updated>
       <workItem from="1616227507425" duration="28224000" />
-      <workItem from="1616260206712" duration="343000" />
+      <workItem from="1616260206712" duration="1570000" />
     </task>
     <servers />
   </component>

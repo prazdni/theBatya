@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Danil.Scripts.Interface;
-using Danil.Scripts.Scriptables;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Danil.Scripts
 {
