@@ -9,7 +9,6 @@ using Random = UnityEngine.Random;
 
 public class InputConditionManager : MonoBehaviour
 {
-    [SerializeField] private EndMessage _endMessage;
     [SerializeField] private PhraseOutput _phraseOutput;
     [SerializeField] private InputLetters _inputLetters;
 
@@ -70,7 +69,7 @@ public class InputConditionManager : MonoBehaviour
         }
         else
         {
-            _endMessage.ShowScore();
+            _inputLetters.OnAnswer(false);
         }
     }
 }
