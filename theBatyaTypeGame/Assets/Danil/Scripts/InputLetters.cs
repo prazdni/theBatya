@@ -9,7 +9,7 @@ namespace Danil.Scripts
     [RequireComponent(typeof(AudioSource))]
     public class InputLetters : MonoBehaviour, IAction<bool>
     {
-        public event Action<bool> OnAction = (b => { });
+        public event Action<bool> OnAction = (b => { }); 
         
         [SerializeField] private AudioClip _audioClipRight;
         [SerializeField] private AudioClip _audioClipWrong;
@@ -43,6 +43,8 @@ namespace Danil.Scripts
             //    _audioSource.clip = _audioClipWrong;
             //    _audioSource.Play();
             //}
+            
+            OnAction.Invoke(right);
             
             _inputField.onEndEdit.Invoke("");
         }
