@@ -10,7 +10,6 @@ namespace Danil.Scripts
         
         [SerializeField] private TimeManager _timeManager;
         [SerializeField] private InputLetters _inputLetters;
-        [SerializeField] private EndMessage _endMessage;
         
         private TMP_Text _text;
 
@@ -28,10 +27,6 @@ namespace Danil.Scripts
             {
                 ScoreCount += 10 * _timeManager.ReduceCount;
                 _text.text = ScoreCount.ToString();
-            }
-            else
-            {
-                Debug.Log("Dead");
             }
         }
     }

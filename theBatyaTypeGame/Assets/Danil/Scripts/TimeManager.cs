@@ -5,17 +5,19 @@ namespace Danil.Scripts
     public class TimeManager : MonoBehaviour
     {
         public int ReduceCount => _reduceCount;
+        
         [SerializeField] private InputLetters _inputLetters;
 
         [SerializeField] private SpriteChanger _spriteChanger;
 
         [SerializeField] private float _reduce = 1.0f;
-        private int _reduceCount = 1;
         [SerializeField] private float _startTime = 6.0f;
         
         private Timer _timer;
 
         private float _changeCounter;
+        
+        private int _reduceCount = 1;
 
         private void Start()
         {
@@ -23,7 +25,7 @@ namespace Danil.Scripts
             
             _changeCounter = 0.0f;
             
-            //_inputLetters.OnAction += Action;
+            _inputLetters.OnAction += Action;
         }
 
         private void Update()
@@ -36,12 +38,7 @@ namespace Danil.Scripts
                     _spriteChanger.CurrentSpriteListNumber++;
                     _spriteChanger.ChangeSprite();
                 }
-                
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    Action(true);
-                }
-                
+
                 _timer.TimerTick(Time.deltaTime);
                 _changeCounter += Time.deltaTime;
             }
@@ -72,7 +69,6 @@ namespace Danil.Scripts
                     _spriteChanger.ChangeSprite();
                 }
                 
-                _inputLetters.OnAnswer(right);
             }
         }
     }

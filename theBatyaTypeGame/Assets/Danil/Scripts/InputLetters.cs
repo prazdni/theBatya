@@ -9,26 +9,26 @@ namespace Danil.Scripts
     [RequireComponent(typeof(AudioSource))]
     public class InputLetters : MonoBehaviour, IAction<bool>
     {
-        public event Action<bool> OnAction = (b => { }); 
-        
+        public event Action<bool> OnAction = (b => { });
+        [SerializeField] private LetterController _letterController;
         [SerializeField] private AudioClip _audioClipRight;
         [SerializeField] private AudioClip _audioClipWrong;
         
         private AudioSource _audioSource;
-        private TMP_InputField _inputField;
+        public TMP_InputField InputField;
 
         private void Start()
         {
-            _inputField = GetComponent<TMP_InputField>();
+            InputField = GetComponent<TMP_InputField>();
             
-            _inputField.onEndEdit.AddListener(OnEndEdit);
-            _inputField.ActivateInputField();
+            InputField.onEndEdit.AddListener(OnEndEdit);
+            InputField.ActivateInputField();
         }
         
         private void OnEndEdit(string str)
         {
-            _inputField.text = "";
-            _inputField.ActivateInputField();
+            InputField.text = "";
+            InputField.ActivateInputField();
         }
 
         public void OnAnswer(bool right)
@@ -46,7 +46,7 @@ namespace Danil.Scripts
             
             OnAction.Invoke(right);
             
-            _inputField.onEndEdit.Invoke("");
+            InputField.onEndEdit.Invoke("");
         }
     }
 }
