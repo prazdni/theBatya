@@ -1,66 +1,75 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Danil.Scripts;
 using System.Data;
 using System.Linq;
+using Random = UnityEngine.Random;
 
 public class InputConditionManager : MonoBehaviour
 {
-    
-    private List<string> _dependenceList = new List<string>();
-    private int _difficulty;
-    private int _stage = 0;
-    
-    private List<char> _alphaList;
-    PasteLetter _pasteLetter;
-    string _stringToCheck;
+    [SerializeField] private PhraseOutput _phraseOutput;
+    [SerializeField] private InputLetters _inputLetters;
 
-    // Start is called before the first frame update
-    void Start()
+    private string _phraseToCheck;
+    private int _level = 0;
+    private int _phrasePreparation = 0;
+
+    private void Start()
     {
-        _pasteLetter._inputField.onValueChanged.AddListener(OnValueChanged);
-        _dependenceList.Add("Я не буду пить");
-        _dependenceList.Add("Я не буду курить");
-        _dependenceList.Add("Я не буду наркоманить");
+        _inputLetters.InputField.onValueChanged.AddListener(OnValueChanged);
+        PrepareText(_phrasePreparation);
     }
 
-
-    void StageChanger()
+    private void PrepareText(int index)
     {
-
-    }
-
-    public bool IsCorrect(string input)
-    {
-        var result = input.Equals(_stringToCheck);
-        if(result)
+        if (index == 0)
         {
-
+            _phraseToCheck = AllStatic.DRINK;
         }
-        return result;
-    }
+        if (index == 1)
+        {
+            _phraseToCheck = AllStatic.SMOKE;
+        }
+        if (index == 2)
+        {
+            _phraseToCheck = AllStatic.USE;
+        }
 
-    private void OnValueChanged(string dependence)
-    {
-        string str = dependence;
-        str = str.Replace(" ", "");
-        var charStr = str.Distinct().ToList();
-
+        var phrase = _phraseToCheck;
+        
+        _phraseToCheck = _phraseToCheck.Replace(" ", "").ToLower();
+        
+        var charStr = _phraseToCheck.Distinct().ToList();
         var randChar = charStr[Random.Range(0, charStr.Count)];
 
-        var dic = new List<char>
+        var randCharToReplace = AllStatic.ALPHABET[Random.Range(0, AllStatic.ALPHABET.Count)];
+        
+        var wordsToAdd = $", РіРґРµ {randChar} СЌС‚Рѕ {randCharToReplace}";
+        _phraseOutput.ChangePhrase(phrase + wordsToAdd);
+
+        _phraseToCheck = _phraseToCheck.Replace(randChar, randCharToReplace);
+        Debug.Log(_phraseToCheck);
+    }
+
+    private void OnValueChanged(string str)
+    {
+        str = str.Replace(" ", "").ToLower();
+        Debug.Log(_phraseToCheck + " " + str);
+        
+        if (_phraseToCheck.StartsWith(str))
+        {
+            if (str.Length == _phraseToCheck.Length)
             {
-                'а', 'б', 'в', 'г'
-            };
-
-        var randCharToReplace = dic[Random.Range(0, dic.Count)];
-
-        var stringToWrite = dependence + ", где" + randChar + " = " + randCharToReplace;
-
-        Debug.Log(stringToWrite);
-
-        var stringToCheck = str.Replace(randChar, randCharToReplace);
-        _stringToCheck = stringToCheck;
+                _inputLetters.OnAnswer(true);
+                _phrasePreparation++;
+                PrepareText(_phrasePreparation % 3);
+            }
+        }
+        else
+        {
+            _inputLetters.OnAnswer(false);
+        }
     }
 }

@@ -1,51 +1,82 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Danil.Scripts
 {
     public class TimeManager : MonoBehaviour
     {
-        [SerializeField] private SpriteChanger _spriteChanger;
+        public int ReduceCount => _reduceCount;
+        
+        [SerializeField] private EndMessage _endMessage;
         [SerializeField] private InputLetters _inputLetters;
+
+        [SerializeField] private SpriteChanger _spriteChanger;
+
         [SerializeField] private float _reduce = 1.0f;
         [SerializeField] private float _startTime = 6.0f;
         
         private Timer _timer;
 
-        private float _spritesChangeCount;
+        private float _changeCounter;
+        
+        private int _reduceCount = 1;
+
+        private bool _isDead = false;
 
         private void Start()
         {
-            _timer = new Timer(_startTime);
-            _inputLetters.OnAction += OnAction;
-            _spritesChangeCount = _spriteChanger.GetSpritesCount() / _timer.CurrentTime;
+            _timer = new Timer(0, _startTime);
+            
+            _changeCounter = 0.0f;
+            
+            _inputLetters.OnAction += Action;
         }
 
         private void Update()
         {
-            _timer.TimerTick(Time.deltaTime);
-
-            if (_spritesChangeCount > (_timer.TimerMaxValue - _timer.CurrentTime) / _spriteChanger.GetSpritesCount())
+            if (_timer.CurrentTime > _timer.TimerMinValue)
             {
-                Debug.Log("changed");
-                _spriteChanger.ChangeSprite();
-            }
+                if (_changeCounter >= _timer.TimerMaxValue / _spriteChanger.Sprites.SpriteTypes[_spriteChanger.CurrentSpriteTypeNumber].AllSprites.Count)
+                {
+                    _changeCounter = 0.0f;
+                    _spriteChanger.CurrentSpriteListNumber++;
+                    _spriteChanger.ChangeSprite();
+                }
 
-            //if (_timer.CurrentTime < _timer.TimerMinValue)
-            //{
-            //    Debug.Log("You lose!");
-            //}
-        }
-
-        private void OnAction(bool right)
-        {
-            if (!right)
-            {
-                _timer.StopTimeCount();
+                _timer.TimerTick(Time.deltaTime);
+                _changeCounter += Time.deltaTime;
             }
             else
             {
-                _timer = new Timer(0, _timer.TimerMaxValue - _reduce);
+                if (!_isDead)
+                {
+                    _isDead = true;
+                    _endMessage.ShowScore();
+                    Debug.Log("Death");
+                }
+            }
+        }
+
+        private void Action(bool right)
+        {
+            if (right)
+            {
+                if (_spriteChanger.CurrentSpriteTypeNumber == 2)
+                {
+                    _timer = new Timer(0, _timer.TimerMaxValue - _reduce);
+                    _spriteChanger.CurrentSpriteTypeNumber = 0;
+                    _spriteChanger.CurrentSpriteListNumber = 0;
+                    _changeCounter = 0.0f;
+                    _reduceCount++;
+                }
+                else
+                {
+                    _timer = new Timer(0, _timer.TimerMaxValue);
+                    _spriteChanger.CurrentSpriteTypeNumber++;
+                    _spriteChanger.CurrentSpriteListNumber = 0;
+                    _changeCounter = 0.0f;
+                    _spriteChanger.ChangeSprite();
+                }
+                
             }
         }
     }

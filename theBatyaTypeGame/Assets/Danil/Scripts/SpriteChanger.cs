@@ -8,43 +8,24 @@ namespace Danil.Scripts
 {
     public class SpriteChanger : MonoBehaviour
     {
-        [SerializeField] private AllTypesOfSprites _sprites;
+        public AllTypesOfSprites Sprites;
 
         private SpriteRenderer _spriteRenderer;
+        
+        public int CurrentSpriteTypeNumber { get; set; }
 
-        private int _currentSpriteTypeNumber = 0;
-
-        private int _currentSpriteListNumber = 0;
+        public int CurrentSpriteListNumber { get; set; }
         
         private void Start()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
             
-            _spriteRenderer.sprite = _sprites.SpriteTypes[_currentSpriteTypeNumber].AllSprites[_currentSpriteListNumber];
+            _spriteRenderer.sprite = Sprites.SpriteTypes[0].AllSprites[0];
         }
 
         public void ChangeSprite()
         {
-            _currentSpriteListNumber++;
-            
-            if (_currentSpriteListNumber >= _sprites.SpriteTypes[_currentSpriteTypeNumber].AllSprites.Count)
-            {
-                _currentSpriteListNumber = 0;
-                _currentSpriteTypeNumber ++;
-                
-                if (_currentSpriteTypeNumber > _sprites.SpriteTypes.Count)
-                {
-                    _currentSpriteTypeNumber = 0;
-                }
-                
-                _spriteRenderer.sprite = _sprites.SpriteTypes[_currentSpriteTypeNumber].AllSprites[_currentSpriteListNumber];
-            }
-        }
-        
-
-        public int GetSpritesCount()
-        {
-            return _currentSpriteListNumber;
+            _spriteRenderer.sprite = Sprites.SpriteTypes[CurrentSpriteTypeNumber].AllSprites[CurrentSpriteListNumber];
         }
     }
 }

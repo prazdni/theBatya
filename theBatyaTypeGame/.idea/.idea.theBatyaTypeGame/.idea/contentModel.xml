@@ -8,12 +8,16 @@
       <e p="Assets" t="Include">
         <e p="Danil" t="Include">
           <e p="Scripts" t="Include">
+            <e p="AllStatic.cs" t="Include" />
+            <e p="EndMessage.cs" t="Include" />
             <e p="InputLetters.cs" t="Include" />
             <e p="Interface" t="Include">
               <e p="IAction.cs" t="Include" />
             </e>
             <e p="LetterController.cs" t="Include" />
             <e p="PasteLetter.cs" t="Include" />
+            <e p="PhraseOutput.cs" t="Include" />
+            <e p="Score.cs" t="Include" />
             <e p="Scriptables" t="Include">
               <e p="AllTypesOfSprites.cs" t="Include" />
               <e p="Sprites.cs" t="Include" />
@@ -52,6 +56,11 @@
           </e>
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Vadim" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="InputConditionManager.cs" t="Include" />
           </e>
         </e>
       </e>

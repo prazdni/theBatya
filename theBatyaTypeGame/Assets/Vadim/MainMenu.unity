@@ -284,19 +284,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 83001068}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2049309288}
-        m_TargetAssemblyTypeName: MainMenuLogic, Assembly-CSharp
-        m_MethodName: ExitGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &83001068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,6 +448,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91013046c77cfb94bb2b60f16763f2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _difficultyText: {fileID: 0}
+  _soundSettingsText: {fileID: 0}
+  _difficultyButton: {fileID: 0}
+  _soundSettingsButton: {fileID: 0}
+  _startButton: {fileID: 0}
+  _exitButton: {fileID: 0}
 --- !u!114 &299959846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,19 +578,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 474823559}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2049309288}
-        m_TargetAssemblyTypeName: MainMenuLogic, Assembly-CSharp
-        m_MethodName: ChangeDifficulty
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &474823559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,19 +1081,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1056018980}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2049309288}
-        m_TargetAssemblyTypeName: MainMenuLogic, Assembly-CSharp
-        m_MethodName: StartGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1056018980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1473,19 +1443,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1405773122}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2049309288}
-        m_TargetAssemblyTypeName: MainMenuLogic, Assembly-CSharp
-        m_MethodName: ChangeSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1405773122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1773,6 +1731,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91013046c77cfb94bb2b60f16763f2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _difficultyText: {fileID: 1982186433}
+  _soundSettingsText: {fileID: 755796640}
+  _difficultyButton: {fileID: 474823558}
+  _soundSettingsButton: {fileID: 1405773121}
+  _startButton: {fileID: 1056018979}
+  _exitButton: {fileID: 83001067}
 --- !u!114 &2049309289
 MonoBehaviour:
   m_ObjectHideFlags: 0
