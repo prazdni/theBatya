@@ -7,9 +7,11 @@ using System.Linq;
 
 public class InputConditionManager : MonoBehaviour
 {
-
+    
     private List<string> _dependenceList = new List<string>();
     private int _difficulty;
+    private int _stage = 0;
+    
     private List<char> _alphaList;
     PasteLetter _pasteLetter;
     string _stringToCheck;
@@ -24,9 +26,19 @@ public class InputConditionManager : MonoBehaviour
     }
 
 
+    void StageChanger()
+    {
+
+    }
+
     public bool IsCorrect(string input)
     {
-        return input.Equals(_stringToCheck);
+        var result = input.Equals(_stringToCheck);
+        if(result)
+        {
+
+        }
+        return result;
     }
 
     private void OnValueChanged(string dependence)
