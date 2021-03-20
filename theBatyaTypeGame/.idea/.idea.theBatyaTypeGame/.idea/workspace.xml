@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986e1608-e3cc-4d70-ae34-dd682a050de5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/InputLetters.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/InputLetters.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/LetterController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/LetterController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/PasteLetter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.theBatyaTypeGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Danil/Scripts/InputLetters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Danil/Scripts/InputLetters.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +40,9 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/InutLetters.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/LetterController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/PasteLetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/TestSctipts.cs" />
         <option value="$PROJECT_DIR$/Assets/Danil/Scripts/InputLetters.cs" />
+        <option value="$PROJECT_DIR$/Assets/Danil/Scripts/PasteLetter.cs" />
       </list>
     </option>
   </component>
@@ -90,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616227501045</updated>
-      <workItem from="1616227507425" duration="8934000" />
+      <workItem from="1616227507425" duration="10413000" />
     </task>
     <servers />
   </component>

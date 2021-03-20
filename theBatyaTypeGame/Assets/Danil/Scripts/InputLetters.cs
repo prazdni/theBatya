@@ -16,10 +16,9 @@ namespace Danil.Scripts
         private void Start()
         {
             _inputField = GetComponent<TMP_InputField>();
+            
             _inputField.onEndEdit.AddListener(OnEndEdit);
-            //_inputField.onTextSelection.AddListener(OnTextSelection);
             _inputField.ActivateInputField();
-            _inputField.onValueChanged.AddListener(OnValueChanged);
         }
         
         private void OnEndEdit(string str)
@@ -30,26 +29,18 @@ namespace Danil.Scripts
 
         public void OnAnswer(bool right)
         {
-            if (right)
-            {
-                _audioSource.clip = _audioClipRight;
-                _audioSource.Play();
-            }
-            else
-            {
-                _audioSource.clip = _audioClipWrong;
-                _audioSource.Play();
-            }
-        }
-        
-        private void OnValueChanged(string str)
-        {
-            //_audioSource.Play();
-        }
-
-        private void OnTextSelection(string str, int index1, int index2)
-        {
-
+            //if (right)
+            //{
+            //    _audioSource.clip = _audioClipRight;
+            //    _audioSource.Play();
+            //}
+            //else
+            //{
+            //    _audioSource.clip = _audioClipWrong;
+            //    _audioSource.Play();
+            //}
+            
+            _inputField.onEndEdit.Invoke("");
         }
     }
 }
