@@ -8,16 +8,22 @@
       <e p="Assets" t="Include">
         <e p="Danil" t="Include">
           <e p="Scripts" t="Include">
+<<<<<<< HEAD
             <e p="AllPhrases.cs" t="Include" />
             <e p="EndMessage.cs" t="Include" />
+=======
+>>>>>>> Vadim
             <e p="InputLetters.cs" t="Include" />
             <e p="Interface" t="Include">
               <e p="IAction.cs" t="Include" />
             </e>
             <e p="LetterController.cs" t="Include" />
             <e p="PasteLetter.cs" t="Include" />
+<<<<<<< HEAD
             <e p="PhraseOutput.cs" t="Include" />
             <e p="Score.cs" t="Include" />
+=======
+>>>>>>> Vadim
             <e p="Scriptables" t="Include">
               <e p="AllTypesOfSprites.cs" t="Include" />
               <e p="Sprites.cs" t="Include" />
