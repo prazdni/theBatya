@@ -10,6 +10,7 @@ namespace Danil.Scripts
     {
         [SerializeField] private RectTransform _pauseMenu;
         [SerializeField] private ScoreViewManager _scoreViewManager;
+        [SerializeField] private InputLetters _inputLetters;
 
         private bool _isEnabled;
 
@@ -46,16 +47,23 @@ namespace Danil.Scripts
             {
                 Time.timeScale = 0.0f;
                 AudioManager.Instance.AdjustMusicVolume(-10);
+                _inputLetters.InputField.readOnly = true;
             }
             else
             {
                 Time.timeScale = 1.0f;
                 AudioManager.Instance.AdjustMusicVolume(0);
+                _inputLetters.InputField.readOnly = false;
             }
         }
 
         public void LoadScene(int sceneNumber)
         {
+            if (sceneNumber == 0)
+            {
+                AudioManager.Instance.AdjustMusicVolume(0);
+            }
+            
             SceneManager.LoadScene(sceneNumber);
         }
     }
