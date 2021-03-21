@@ -15,6 +15,8 @@ public class MainMenuLogic : MonoBehaviour
     public Button _startButton;
     public Button _exitButton;
 
+    private bool _shouldSound;
+
     string[] _difficulties = { "новобранец", "смельчак", "боец" };
 
     private void Start()
@@ -31,6 +33,8 @@ public class MainMenuLogic : MonoBehaviour
 
         _difficultyText.text = _difficulties[difficulty];
         PlayerPrefs.SetInt("PlayerDifficulty", 0);
+
+        _shouldSound = Mathf.Approximately(PlayerPrefs.GetFloat("Music", 0.0f), 0.0f);
     }
     public void StartGame()
     {
@@ -40,7 +44,8 @@ public class MainMenuLogic : MonoBehaviour
 
     public void ChangeSound()
     {
-        AudioManager.Instance.AdjustMusicVolume();
+        _shouldSound = !_shouldSound;
+        AudioManager.Instance.AdjustMusicVolume(_shouldSound);
     }
 
     public void ChangeDifficulty()

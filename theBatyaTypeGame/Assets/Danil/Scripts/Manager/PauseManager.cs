@@ -56,6 +56,11 @@ namespace Danil.Scripts
 
         public void LoadScene(int sceneNumber)
         {
+            if (sceneNumber == 0)
+            {
+                AudioManager.Instance.AdjustMusicVolume(0);
+            }
+            
             SceneManager.LoadScene(sceneNumber);
         }
     }

@@ -30,25 +30,29 @@ namespace Manager
 
         public void AdjustMusicVolume(float volume)
         {
-            _audioMixer.SetFloat("Music", volume);
+            if (!Mathf.Approximately(PlayerPrefs.GetFloat("Music"), -80.0f))
+            {
+                _audioMixer.SetFloat("Music", volume);
+            }
         }
 
-        public void AdjustMusicVolume()
+        public void AdjustMusicVolume(bool shouldSound)
         {
-            if (GetMusicVolumeBool())
-            {
-                _audioMixer.SetFloat("Music", -80.0f);
-                PlayerPrefs.SetFloat("Music", -80.0f);
-            }
-            else
+            if (shouldSound)
             {
                 _audioMixer.SetFloat("Music", 0.0f);
                 PlayerPrefs.SetFloat("Music", 0.0f);
+            }
+            else
+            {
+                PlayerPrefs.SetFloat("Music", -80.0f);
+                _audioMixer.SetFloat("Music", -80.0f);
             }
         }
 
         public bool GetMusicVolumeBool()
         {
+            Debug.Log(PlayerPrefs.GetFloat("Music"));
             return Mathf.Approximately(PlayerPrefs.GetFloat("Music"), 0.0f);
         }
 
