@@ -5348,6 +5348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pauseMenu: {fileID: 2050451605}
   _scoreViewManager: {fileID: 607827847}
+  _inputLetters: {fileID: 2066874376}
 --- !u!1 &905827387
 GameObject:
   m_ObjectHideFlags: 0
