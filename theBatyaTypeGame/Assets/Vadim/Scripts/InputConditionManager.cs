@@ -20,7 +20,7 @@ public class InputConditionManager : MonoBehaviour
     {
         _inputLetters.InputField.onValueChanged.AddListener(OnValueChanged);
 
-        _level = PlayerPrefs.GetInt("Difficulty");
+        _level = AllStatic.LEVEL;
         
         PrepareText(_phrasePreparation);
     }
