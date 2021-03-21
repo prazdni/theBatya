@@ -33,7 +33,7 @@ public class MainMenuLogic : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneTransition.SwitchToScene("1");
+        SceneTransition.SwitchToScene("MainScene");
     }
 
     public void ChangeSound()
