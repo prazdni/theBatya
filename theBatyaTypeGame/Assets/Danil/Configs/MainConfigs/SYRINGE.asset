@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d9f219cb5c844e878faf901d01006e90, type: 3}
-  m_Name: Syringe
+  m_Name: SYRINGE
   m_EditorClassIdentifier: 
   AllSprites:
   - {fileID: 21300000, guid: 8f3fedc71608be64eaf20a37ec997fe1, type: 3}
