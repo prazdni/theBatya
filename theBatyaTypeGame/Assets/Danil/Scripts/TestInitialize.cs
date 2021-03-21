@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Danil.Scripts
 {
@@ -7,7 +6,7 @@ namespace Danil.Scripts
     {
         private void Awake()
         {
-            PlayerPrefs.SetInt("Difficulty", 0);
+            AllStatic.LEVEL = PlayerPrefs.GetInt("PlayerDifficulty", 0);
             Screen.SetResolution(1080, 1920, FullScreenMode.FullScreenWindow);
         }
     }

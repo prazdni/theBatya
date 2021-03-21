@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Manager;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,8 +14,7 @@ public class MainMenuLogic : MonoBehaviour
     public Button _startButton;
     public Button _exitButton;
 
-    string[] _difficulties = { "Ëåãêî", "Ñðåäíå", "Ñëîæíî" };
-    // Start is called before the first frame update
+    string[] _difficulties = { "Ð½Ð¾Ð²Ð¾Ð±Ñ€Ð°Ð½ÐµÑ†", "ÑÐ¼ÐµÐ»ÑŒÑ‡Ð°Ðº", "Ð±Ð¾ÐµÑ†" };
 
     private void Start()
     {
@@ -29,6 +29,7 @@ public class MainMenuLogic : MonoBehaviour
         btnExit.onClick.AddListener(ExitGame);
 
         _difficultyText.text = _difficulties[difficulty];
+        PlayerPrefs.SetInt("PlayerDifficulty", 0);
     }
     public void StartGame()
     {
@@ -37,12 +38,13 @@ public class MainMenuLogic : MonoBehaviour
 
     public void ChangeSound()
     {
-
+        AudioManager.Instance.AdjustMusicVolume();
     }
 
     public void ChangeDifficulty()
     {
         difficulty++;
+        
         if (difficulty > 2)
         {
             difficulty = 0;
@@ -58,8 +60,6 @@ public class MainMenuLogic : MonoBehaviour
                 break;
             case 2:
                 _difficultyText.text = _difficulties[difficulty];
-                break;
-            default:
                 break;
         }
 
