@@ -18,6 +18,8 @@ public class InputConditionManager : MonoBehaviour
 
     private void Start()
     {
+        Screen.SetResolution(1024, 768, FullScreenMode.FullScreenWindow);
+        
         _inputLetters.InputField.onValueChanged.AddListener(OnValueChanged);
 
         _level = AllStatic.LEVEL;
