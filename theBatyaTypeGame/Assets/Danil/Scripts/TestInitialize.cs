@@ -8,6 +8,8 @@ namespace Danil.Scripts
         {
             AllStatic.LEVEL = PlayerPrefs.GetInt("PlayerDifficulty", 0);
             Screen.SetResolution(1080, 1920, FullScreenMode.FullScreenWindow);
+
+            Time.timeScale = 1.0f;
         }
     }
 }

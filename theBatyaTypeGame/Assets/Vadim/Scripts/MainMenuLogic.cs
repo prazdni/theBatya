@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Manager;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuLogic : MonoBehaviour
@@ -33,7 +34,8 @@ public class MainMenuLogic : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneTransition.SwitchToScene("MainScene");
+        //SceneTransition.SwitchToScene("MainScene");
+        SceneManager.LoadScene(1);
     }
 
     public void ChangeSound()

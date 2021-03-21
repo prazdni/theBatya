@@ -233,10 +233,10 @@ RectTransform:
   m_Father: {fileID: 607827846}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.356, y: 0.33750126}
-  m_AnchorMax: {x: 0.6478727, y: 0.41500002}
-  m_AnchoredPosition: {x: -0.041194916, y: -17.815102}
-  m_SizeDelta: {x: 69.666, y: 11.2302}
+  m_AnchorMin: {x: 0.23454714, y: 0.2225593}
+  m_AnchorMax: {x: 0.80747575, y: 0.3366779}
+  m_AnchoredPosition: {x: -4.041195, y: 0.6848984}
+  m_SizeDelta: {x: 11.666, y: 4.2302}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &23438277
 MonoBehaviour:
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: afa34eeff3aa4724690d739fb65c94af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ab1d2b9713c5004bbe4c823bd952b93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -589,7 +589,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: afa34eeff3aa4724690d739fb65c94af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ab1d2b9713c5004bbe4c823bd952b93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -997,6 +997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 921836297}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -1182,7 +1183,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11.75
+  m_fontSize: 12
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1332,7 +1333,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.15
+  m_fontSize: 31.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1626,6 +1627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 4907039}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -1835,10 +1837,10 @@ RectTransform:
   m_Father: {fileID: 2050451605}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.27374533, y: 0.595}
-  m_AnchorMax: {x: 0.7491087, y: 0.72}
-  m_AnchoredPosition: {x: -0.24560547, y: -0.5}
-  m_SizeDelta: {x: 0.9883003, y: 0}
+  m_AnchorMin: {x: 0.26900002, y: 0.595}
+  m_AnchorMax: {x: 0.73974097, y: 0.72}
+  m_AnchoredPosition: {x: -0.74560547, y: -0.5}
+  m_SizeDelta: {x: 2.9883003, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &337150137
 MonoBehaviour:
@@ -1887,7 +1889,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 51.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2181,6 +2183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 794640723}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -2366,7 +2369,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
+  m_fontSize: 10.7
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2453,7 +2456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.22047213, y: 0.22960389}
   m_AnchorMax: {x: 0.82847214, y: 0.8031981}
-  m_AnchoredPosition: {x: -0.27059937, y: -0.40879965}
+  m_AnchoredPosition: {x: -0.27059937, y: -0.40880013}
   m_SizeDelta: {x: 0.68239975, y: 1.1471004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &464846774
@@ -2660,6 +2663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 1649269777}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -3408,6 +3412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 696681409}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -4152,6 +4157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 1559585703}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -4350,7 +4356,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.1
+  m_fontSize: 39.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4720,6 +4726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 551098671}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -4936,7 +4943,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: afa34eeff3aa4724690d739fb65c94af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ab1d2b9713c5004bbe4c823bd952b93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5149,6 +5156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseMenu: {fileID: 2050451605}
+  _scoreViewManager: {fileID: 607827847}
 --- !u!1 &905827387
 GameObject:
   m_ObjectHideFlags: 0
@@ -5276,6 +5284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 1070628418}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -5653,7 +5662,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.45
+  m_fontSize: 37.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5894,7 +5903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: afa34eeff3aa4724690d739fb65c94af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ab1d2b9713c5004bbe4c823bd952b93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6195,6 +6204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputField: {fileID: 2066874373}
+  _inputLetters: {fileID: 2066874376}
   _audioClips:
   - {fileID: 8300000, guid: cabce5d0839802c43b945f6071cd6c9a, type: 3}
   - {fileID: 8300000, guid: 0675e196bc30f324c97366592a66c8a5, type: 3}
@@ -6518,6 +6528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 985474978}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -6939,6 +6950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 333496599}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -7284,6 +7296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 31748398}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -7629,6 +7642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 1608108516}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -7974,6 +7988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 1672968969}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -8112,7 +8127,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.193, y: 0.19680195}
   m_AnchorMax: {x: 0.85531986, y: 0.8031981}
-  m_AnchoredPosition: {x: -0.45289993, y: -0.36469936}
+  m_AnchoredPosition: {x: -0.45289993, y: -0.3646984}
   m_SizeDelta: {x: -0.22340012, y: 1.059}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1272743030
@@ -8319,6 +8334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 718407099}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -8664,6 +8680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 1713697172}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -9009,6 +9026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 839739061}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -9346,7 +9364,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 9.55
+  m_fontSize: 8.45
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9792,6 +9810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 1553612340}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -10273,7 +10292,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.1
+  m_fontSize: 20.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10861,6 +10880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc2d090e76c1ba438f3dac0236a6eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParentImage: {fileID: 949771370}
   LetterId: 0
   InputField: {fileID: 0}
   AudioClip: {fileID: 0}
@@ -11046,7 +11066,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14.7
+  m_fontSize: 15
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
