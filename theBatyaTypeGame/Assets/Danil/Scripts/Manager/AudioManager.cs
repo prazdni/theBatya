@@ -31,9 +31,6 @@ namespace Manager
         public void AdjustMusicVolume(float volume)
         {
             _audioMixer.SetFloat("Music", volume);
-            PlayerPrefs.SetFloat("Music", volume);
-
-            PlayerPrefs.Save();
         }
 
         public void AdjustMusicVolume()

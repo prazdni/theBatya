@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Danil.Scripts.Manager;
+using Manager;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 namespace Danil.Scripts
@@ -10,6 +13,7 @@ namespace Danil.Scripts
     public class EndMessage : MonoBehaviour
     {
         [SerializeField] private Score _score;
+        [SerializeField] private ScoreViewManager _scoreImage;
 
         private TMP_Text _text;
         private AudioSource _audioSource;
@@ -23,8 +27,13 @@ namespace Danil.Scripts
 
         public void ShowScore()
         {
+            Time.timeScale = 0.0f;
             _audioSource.Play();
-            _text.text = $"Поздравляем, вы набрали {_score.ScoreCount} очков";
+            AudioManager.Instance.AdjustMusicVolume(-80.0f);
+            _text.text = "";
+            
+            _scoreImage.gameObject.SetActive(true);
+            _scoreImage.ShowText($"Поздравляем, вы набрали {_score.ScoreCount} очков");
         }
     }
 }

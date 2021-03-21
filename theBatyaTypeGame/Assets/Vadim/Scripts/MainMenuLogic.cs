@@ -29,6 +29,7 @@ public class MainMenuLogic : MonoBehaviour
         btnExit.onClick.AddListener(ExitGame);
 
         _difficultyText.text = _difficulties[difficulty];
+        PlayerPrefs.SetInt("PlayerDifficulty", 0);
     }
     public void StartGame()
     {

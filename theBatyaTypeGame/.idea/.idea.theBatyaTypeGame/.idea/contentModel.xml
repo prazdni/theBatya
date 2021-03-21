@@ -9,15 +9,18 @@
         <e p="Danil" t="Include">
           <e p="Scripts" t="Include">
             <e p="AllStatic.cs" t="Include" />
-            <e p="AudioManager.cs" t="Include" />
             <e p="EndMessage.cs" t="Include" />
             <e p="InputLetters.cs" t="Include" />
             <e p="Interface" t="Include">
               <e p="IAction.cs" t="Include" />
             </e>
             <e p="LetterController.cs" t="Include" />
+            <e p="Manager" t="Include">
+              <e p="AudioManager.cs" t="Include" />
+              <e p="PauseManager.cs" t="Include" />
+              <e p="ScoreViewManager.cs" t="Include" />
+            </e>
             <e p="PasteLetter.cs" t="Include" />
-            <e p="PauseManager.cs" t="Include" />
             <e p="PhraseOutput.cs" t="Include" />
             <e p="Score.cs" t="Include" />
             <e p="Scriptables" t="Include">
