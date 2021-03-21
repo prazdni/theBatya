@@ -50,6 +50,7 @@ namespace Danil.Scripts
                 if (!_isDead)
                 {
                     _isDead = true;
+                    _inputLetters.InputField.readOnly = true;
                     _endMessage.ShowScore();
                     Debug.Log("Death");
                 }
