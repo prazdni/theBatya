@@ -1,10 +1,12 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(TMP_Text))]
 public class PasteLetter : MonoBehaviour
 {
+    public Image ParentImage;
     public int LetterId;
     public TMP_InputField InputField;
     public AudioClip AudioClip;
