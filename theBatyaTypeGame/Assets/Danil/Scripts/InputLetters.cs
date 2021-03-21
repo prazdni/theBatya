@@ -2,7 +2,6 @@
 using Danil.Scripts.Interface;
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace Danil.Scripts
 {
@@ -39,7 +38,11 @@ namespace Danil.Scripts
 
         private void OnEndEdit(string str)
         {
-            InputField.text = "";
+            if (!Input.GetKeyDown(KeyCode.Escape))
+            {
+                InputField.text = "";
+            }
+            
             InputField.ActivateInputField();
         }
 

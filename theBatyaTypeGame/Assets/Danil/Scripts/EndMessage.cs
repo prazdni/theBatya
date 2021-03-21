@@ -22,7 +22,7 @@ namespace Danil.Scripts
         {
             _text = GetComponent<TMP_Text>();
             _audioSource = GetComponent<AudioSource>();
-            _text.text = "Ждём пройгрыша";
+            _text.text = "";
         }
 
         public void ShowScore()

@@ -15,7 +15,7 @@ public class InputConditionManager : MonoBehaviour
     private string _phraseToCheck;
     private int _level = 0;
     private int _phrasePreparation;
-
+    
     private void Start()
     {
         Screen.SetResolution(1024, 768, FullScreenMode.FullScreenWindow);

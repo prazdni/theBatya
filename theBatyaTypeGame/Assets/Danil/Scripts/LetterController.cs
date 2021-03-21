@@ -10,7 +10,6 @@ namespace Danil.Scripts
 {
     public class LetterController : MonoBehaviour
     {
-        [SerializeField] private TMP_InputField _inputField;
         [SerializeField] private InputLetters _inputLetters;
         public List<AudioClip> _audioClips;
         private List<PasteLetter> _pasteLetters;
@@ -27,7 +26,7 @@ namespace Danil.Scripts
             {
                 _pasteLetters[i].LetterId = i;
                 _pasteLetters[i].AudioClip = _audioClips[Random.Range(0, 3)];
-                _pasteLetters[i].InputField = _inputField;
+                _pasteLetters[i].InputLetters = _inputLetters;
                 _pasteLetters[i].Initialize();
             }
 
